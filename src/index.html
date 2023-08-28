@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn tailwindcss</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="p-5">
+      <h1
+        class="text-center block text-green-400 box-border border-blue-900 border-2 bg-violet-200 h-40 p-2 rounded-md"
+      >
+        Hello World
+      </h1>
+      <h1
+        class="text-center block text-green-400 box-border border-blue-900 border-2 bg-violet-200 h-40 p-2 rounded-md"
+      >
+        Hello World
+      </h1>
+    </main>
+
+    <!-- Layout -->
+    <div class="fixed bg-red-500 w-10 h-10 top-0">哈哈</div>
+    <div class="flex justify-center items-center space-x-8 h-80 bg-slate-200">
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+      <div class="rounded-full w-16 h-16 bg-blue-200"></div>
+    </div>
+    <div class="grid grid-cols-8 gap-2 mt-3">
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+      <div class="p-2 bg-green-200 text-center">aaa</div>
+    </div>
+    <div class="max-md:block hidden">
+      <p>I will appear for device resilution 小于 768px</p>
+    </div>
+    <div class="max-xl:md:block hidden">
+      <p>I will appear for device resilution 768px-1280px</p>
+    </div>
+    <div class="sm:block hidden">
+      <p>I will appear for device resilution 大于 640px</p>
+    </div>
+    <div class="max-2xl:xl:block hidden">
+      <p>I will appear for device resilution 1280-1536</p>
+    </div>
+    <div class="2xl:block hidden">
+      <p>I will appear for device resilution 1536以上</p>
+    </div>
+    <button class="my-2 rounded-lg bg-blue-500 px-4 py-2 
+    focus:outline-none focus:ring"> Clike Me</button>
+    <ul class="m-4 space-y-2">
+      <li class="bg-yellow-200 first:bg-green-200 text-center py-2 odd:bg-slate-400 even:bg-red-300">11111</li>
+      <li class="bg-yellow-200 text-center py-2 odd:bg-slate-400 even:bg-red-300">11111</li>
+      <li class="bg-yellow-200 text-center py-2 odd:bg-slate-400 even:bg-red-300">11111</li>
+      <li class="bg-yellow-200 text-center py-2 odd:bg-slate-400 even:bg-red-300">11111</li>
+      <li class="bg-yellow-200 text-center py-2 odd:bg-slate-400 even:bg-red-300">11111</li>
+      <li class="bg-yellow-200 text-center py-2 odd:bg-slate-400 even:bg-red-300">11111</li>
+    </ul>
+    <!-- Theme:dark -->
+    <div class="card">
+      <h3 class="dark:text-white">This is a text element</h3>
+      <p class="dark:text-white">This is an even longer p tag element</p>
+      <button id="toggleDark" class="text-blue-900 rounded-lg px-4 py-2 mt-8 text-sm bg-blue-100"
+      onclick="document.body.classList.toggle('dark')">toggle dark</button>
+    </div>
+  </body>
+</html>
